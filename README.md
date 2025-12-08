@@ -1,0 +1,88 @@
+# Wumpus World Simulator
+
+---
+## 📜 Original Project Source / Acknowledgements
+
+The base files and original structure for this Wumpus World Simulator project were provided by a template created by @thiagodnf. 
+
+This project is built upon their initial work.
+
+Final Release: Stabilized Turn-Based Wumpus World Simulator
+
+This version features a fully functional, stable game loop and advanced Rival Monster AI:
+
+- Strict Turn-Based System: Score deduction and Monster movement are now strictly conditional on the Player moving to a new grid tile. Changing direction alone does not advance the game turn.
+
+## New Features in This Version:
+
+- Advanced Rival AI: Implemented a sophisticated Monster with three distinct states: Patrol, Search (Memory), and Chase.
+- Dynamic Vision: Monster's sight lines adjust dynamically based on its current state, ranging from a focused 10-tile tunnel vision in Chase mode to a broader peripheral vision in Search mode.
+- Simplified Movement: The Monster now moves at a consistent speed (one step per turn) and ignores environmental hazards like holes for simplified gameplay.
+- Hazard Indicator: Added a visual indicator ('!') that appears above the monster when it sights the player, remaining visible even through the fog of war.
+- Stability Fixes: Resolved critical issues related to coordinate reading (getPosI/J) and variable initialization (keys, locale functions) that previously caused game crashes.
+
+- Original Source Files: Based on the Wumpus World Simulator project files originally from @thiagodnf.
+- 
+A Wumpus World Simulator developed in Javascript, HTML and CSS
+
+[![GitHub Release](https://img.shields.io/github/release/thiagodnf/wumpus-world-simulator.svg)](https://github.com/thiagodnf/wumpus-world-simulator/releases/latest)
+[![GitHub contributors](https://img.shields.io/github/contributors/thiagodnf/wumpus-world-simulator.svg)](https://github.com/thiagodnf/wumpus-world-simulator/graphs/contributors)
+[![GitHub stars](https://img.shields.io/github/stars/thiagodnf/wumpus-world-simulator.svg)](https://github.com/thiagodnf/wumpus-world-simulator)
+![GitHub top language](https://img.shields.io/github/languages/top/thiagodnf/wumpus-world-simulator)
+[![MIT Licence](https://badges.frapsoft.com/os/mit/mit.svg?v=103)](https://opensource.org/licenses/mit-license.php)
+[![Open Source Love](https://badges.frapsoft.com/os/v1/open-source.svg?v=103)](https://github.com/ellerbrock/open-source-badges/)
+
+
+## Wumpus?
+Hunt the Wumpus is an early computer game, based on a simple hide and seek format featuring a mysterious monster (the Wumpus) that lurks deep inside a network of rooms. It was originally a text-based game written in BASIC. It has since been ported to various programming languages and platforms including graphical versions.
+
+Reference: [Wikipedia](https://en.wikipedia.org/wiki/Hunt_the_Wumpus)
+
+## How to play
+Access the simulator [here](http://thiagodnf.github.io/wumpus-world-simulator/).
+
+## Screenshot
+
+<kbd>
+  <img class="screenshot" src=<img width="1917" height="916" alt="image" src="https://github.com/user-attachments/assets/f0d8a78a-bfb2-4ab6-b9e7-df0c7c1fe58f" />
+/>
+</kbd>
+
+## Languages
+The Wumpus World Simulator is available at following languages:
+* en-US
+* pt-BR
+* ar
+* fr
+* tr_TR
+
+## Questions or Suggestions
+
+Feel free to create <a href="https://github.com/thiagodnf/wumpus-world-simulator/issues">issues</a> here as you need
+
+## Contribute
+
+Contributions to the this project are very welcome! We can't do this alone! Feel free to fork this project, work on it and then make a pull request.
+
+## Authors
+
+* **Thiago Ferreira** - *Initial work*
+
+See also the list of [contributors](https://github.com/thiagodnf/wumpus-world-simulator/graphs/contributors) who participated in this project.
+
+## License
+
+This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details
+
+## Donate
+
+I open-source almost everything I can, and I try to reply to everyone needing help using these projects. Obviously, this takes time. You can integrate and use these projects in your applications for free! You can even change the source code and redistribute (even resell it).
+
+However, if you get some profit from this or just want to encourage me to continue creating stuff, there are few ways you can do it:
+
+<a href="https://www.buymeacoffee.com/thiagodnf" target="_blank">
+  <img src="https://www.buymeacoffee.com/assets/img/guidelines/download-assets-sm-2.svg" alt="Buy Me A Coffee">
+</a>
+<br/>
+<br/>
+Thanks! ❤️
