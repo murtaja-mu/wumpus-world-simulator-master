@@ -43,10 +43,9 @@ Access the simulator [here](http://thiagodnf.github.io/wumpus-world-simulator/).
 
 ## Screenshot
 
-<kbd>
-  <img src="img/screenshot2.png" alt="Wumpus World Dark Souls Theme" width="1917" height="916" />
-/>
-</kbd>
+<p align="center">
+  <img src="img/gameplay_preview.png" alt="Wumpus World Dark Souls Theme" width="700">
+</p>
 
 ## Languages
 The Wumpus World Simulator is available at following languages:
