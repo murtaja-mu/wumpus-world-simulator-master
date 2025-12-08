@@ -44,7 +44,7 @@ Access the simulator [here](http://thiagodnf.github.io/wumpus-world-simulator/).
 ## Screenshot
 
 <kbd>
-  <img class="screenshot1" src=<img width="1917" height="916" alt="image" src="https://github.com/user-attachments/assets/f0d8a78a-bfb2-4ab6-b9e7-df0c7c1fe58f" />
+  <img class="img/screenshot1" alt="Wumpus World Dark Souls Theme" src=<img width="1917" height="916" />
 />
 </kbd>
 
