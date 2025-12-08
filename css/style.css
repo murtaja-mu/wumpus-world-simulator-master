@@ -1,0 +1,174 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Cinzel:wght@400;700&display=swap');
+
+body {
+    background-color: #050505; 
+    /* (Vignette) */
+    background-image: radial-gradient(circle, #1a1a1a 0%, #000000 100%);
+    color: #a8a8a8; 
+    margin-top: 80px;
+    font-family: 'Cinzel', serif;
+    overflow-x: hidden;
+    animation: fadeInBody 2s ease-in; 
+}
+
+/* ============================
+   HUD (Score, Arrow, Gold)
+   ============================ */
+#score, #arrow, #gold {
+    font-weight: bold;
+    padding-right: 20px;
+    color: #c5a059; 
+    text-shadow: 0px 0px 5px rgba(197, 160, 89, 0.5); 
+    font-size: 1.1rem;
+    letter-spacing: 1px;
+}
+
+/* ============================
+   Game Card (The Board Container)
+   ============================ */
+.card-game {
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.8), inset 0 0 50px rgba(0,0,0,0.9);
+    background: #111111;
+    border: 2px solid #3d3d3d; 
+    border-radius: 4px;
+    box-sizing: border-box;
+    margin-bottom: 20px;
+    position: relative;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.card-game:hover {
+    border-color: #555;
+    box-shadow: 0 0 30px rgba(197, 160, 89, 0.1);
+}
+
+/* ============================
+   Navbar (The Menu)
+   ============================ */
+.navbar {
+    
+    background: linear-gradient(180deg, #1a0505 0%, #0f0f0f 100%) !important;
+    box-shadow: 0px 4px 10px 0px rgba(0, 0, 0, 0.9);
+    border-bottom: 1px solid #7c5e26; 
+}
+
+.navbar .navbar-brand {
+    text-decoration: none;
+    color: #c5a059 !important; 
+    font-weight: 700;
+    font-size: 1.5rem;
+    text-shadow: 2px 2px 0px #000;
+    letter-spacing: 2px;
+}
+
+.navbar .nav-link {
+    color: #b0b0b0 !important; 
+    background-color: transparent !important;
+    transition: all 0.4s ease;
+    font-size: 1rem;
+}
+
+.navbar .nav-link:hover {
+    color: #ff4d4d !important; 
+    text-shadow: 0 0 8px rgba(255, 77, 77, 0.6);
+    transform: translateY(-2px); 
+}
+
+/* ============================
+   Buttons & Dropdowns
+   ============================ */
+.btn-primary {
+    background-color: #2b2b2b;
+    border-color: #5c4518;
+    color: #d4d4d4;
+    font-family: 'Cinzel', serif;
+    transition: all 0.3s;
+}
+
+.btn-primary:hover {
+    background-color: #4a0e0e; 
+    border-color: #ff3333;
+    box-shadow: 0 0 15px rgba(255, 0, 0, 0.4);
+}
+
+.selectpicker {
+    background-color: #1a1a1a !important;
+    color: white !important;
+    border: 1px solid #444 !important;
+}
+
+/* ============================
+   Modals (Game Over / Win)
+   ============================ */
+.modal-content {
+    background-color: #0a0a0a;
+    border: 1px solid #555;
+    color: #ddd;
+    box-shadow: 0 0 50px rgba(0,0,0,1);
+}
+
+.modal-header, .modal-footer {
+    border-color: #333;
+    background-color: #111;
+}
+
+h3[data-i18n="game-over"] {
+    color: #8a0b0b; 
+    font-size: 3rem;
+    text-transform: uppercase;
+    letter-spacing: 5px;
+    animation: youDiedScale 3s ease-out forwards;
+    text-shadow: 0 0 20px rgba(138, 11, 11, 0.8);
+}
+
+h3[data-i18n="congratulations"] {
+    color: #ffd700; 
+    font-size: 2.5rem;
+    text-transform: uppercase;
+    letter-spacing: 3px;
+    animation: victoryGlow 2s infinite alternate;
+}
+
+/* ============================
+   ANIMATIONS 
+   ============================ */
+
+@keyframes fadeInBody {
+    from { opacity: 0; }
+    to { opacity: 1; }
+}
+
+@keyframes youDiedScale {
+    0% { transform: scale(1.2); opacity: 0; filter: blur(5px); }
+    20% { opacity: 1; filter: blur(0); }
+    100% { transform: scale(1); opacity: 1; }
+}
+
+@keyframes victoryGlow {
+    from { text-shadow: 0 0 10px #c5a059; }
+    to { text-shadow: 0 0 30px #ffea00, 0 0 10px white; }
+}
+
+.offcanvas {
+    background-color: #0f0f0f;
+    color: #ccc;
+    border-left: 2px solid #333;
+}
+.offcanvas-header {
+    border-bottom: 1px solid #333;
+}
+
+::-webkit-scrollbar {
+    width: 10px;
+}
+::-webkit-scrollbar-track {
+    background: #000;
+}
+::-webkit-scrollbar-thumb {
+    background: #333;
+    border: 1px solid #555;
+}
+::-webkit-scrollbar-thumb:hover {
+    background: #555;
+}
