@@ -43,7 +43,7 @@ Access the simulator [here](http://thiagodnf.github.io/wumpus-world-simulator/).
 
 ## Screenshot
 
-<p align="center">
+<p>
   <img src="img/screenshot2.png" alt="Wumpus World Dark Souls Theme" width="700">
 </p>
 
